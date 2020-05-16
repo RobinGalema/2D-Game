@@ -46,7 +46,6 @@ public class hudController : MonoBehaviour
         {
             if ( i > stats.currentLumina - 1)
             {
-                Debug.Log(luminaIcons[i].gameObject.name);
                if (luminaIcons[i].gameObject.activeInHierarchy)
                 {
                     luminaIcons[i].color = Color.red;
@@ -65,7 +64,7 @@ public class hudController : MonoBehaviour
     private void updateHealthBar()
     {
         float healthPercentage = (stats.currentHealth / stats.maxHealth) * 100f;
-        Debug.Log(healthPercentage);
+        Debug.Log("|HUDCONTROLLER| ===> The current health percentage is " + healthPercentage);
         healthBarSlider.value = healthPercentage;
     }
 }

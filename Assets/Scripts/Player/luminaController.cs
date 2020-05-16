@@ -31,7 +31,6 @@ public class luminaController : MonoBehaviour
             GameObject spawnedLight = Instantiate(lightPrefab, transform.position + new Vector3(0,0.75f,0), Quaternion.identity);
             spawnedLights.Add(spawnedLight);
             Debug.Log("|LUMINACONTROLLER| ===> Light spawned, current active lights:");
-            Debug.Log("|LUMINACONTROLLER|      " + spawnedLights);
         }
         else if ((stats.currentLumina - 1) < 0)
         {
